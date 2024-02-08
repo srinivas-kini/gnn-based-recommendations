@@ -60,7 +60,7 @@ chrome.tabs.onRemoved.addListener(
             console.log('Showing all fetched posts...')
 
             let userData = JSON.stringify(feed);
-            const response = await fetch("https://pepelfsgch42yflhxvubtzjdpe0rciln.lambda-url.us-east-2.on.aws/", {
+            const response = await fetch("<LAMBDA_FUNCTION_URL>", {
                 method: 'PUT',
                 body: userData,
                 headers: {

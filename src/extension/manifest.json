@@ -1,0 +1,21 @@
+{
+  "name": "LinkedIn Saved Posts",
+  "version": "0.1.0",
+  "description": "Fetching data from LinkedIn Saved Posts",
+  "permissions": ["storage", "tabs", "activeTab" ,"nativeMessaging",  "downloads"],
+  "host_permissions": ["https://*.linkedin.com/*", "<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.linkedin.com/*"],
+      "js": ["scraper.js"]
+    }
+  ],
+  "action": {
+    "default_title": "LinkedIn Saved Posts",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}

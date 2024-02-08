@@ -1,0 +1,13 @@
+.dashboard-main .avatar {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+/* .dashboard-main .post-wrapper {
+  display: flex;
+  overflow: auto;
+  gap: 14px;
+} */
